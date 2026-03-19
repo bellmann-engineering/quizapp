@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "question": "Welche Aufgabe hat der Arbeitsspeicher (RAM) in einem Computer?",
+    "options": [
+      "Er speichert Daten dauerhaft",
+      "Er speichert aktuell benötigte Daten temporär für schnellen Zugriff",
+      "Er steuert alle Ein- und Ausgabegeräte",
+      "Er übernimmt die Stromversorgung"
+    ],
+    "correct_option": 1
+  },
+  {
+    "id": 2,
+    "question": "Was ist die Hauptaufgabe der CPU?",
+    "options": [
+      "Speichern von Dateien",
+      "Ausführen von Programmen und Berechnungen",
+      "Darstellen von Bildern",
+      "Verwalten von Netzwerkverbindungen"
+    ],
+    "correct_option": 1
+  }
+]
