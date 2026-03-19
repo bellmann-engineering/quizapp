@@ -168,6 +168,12 @@ input[type="radio"]:checked + span {
     background: var(--primary-soft);
 }
 
+input[type="checkbox"] {
+    accent-color: var(--primary);
+    width: 18px;
+    height: 18px;
+}
+
 /* =========================
    BUTTONS
 ========================= */

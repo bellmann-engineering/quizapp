@@ -40,20 +40,23 @@ def answer():
     questions = session.get("questions", [])
     index = session.get("current_index", 0)
 
-    selected = request.form.get("option")
+    if index < len(questions):
 
-    if selected is not None and index < len(questions):
-        selected = int(selected)
         q = questions[index]
 
-        if selected == q["correct_option"]:
+        selected = request.form.getlist("option")
+        selected = [int(s) for s in selected]
+        
+        correct = q["correct_options"]
+
+        if sorted(selected) == sorted(correct):
             session["score"] = session.get("score", 0) + 1
         else:
             wrong = session.get("wrong_answers", [])
             wrong.append({
                 "question": q["question"],
-                "your_answer": q["options"][selected],
-                "correct_answer": q["options"][q["correct_option"]]
+                "your_answer": [q["options"][i] for i in selected],
+                "correct_answer": [q["options"][i] for i in correct]
             })
             session["wrong_answers"] = wrong
 

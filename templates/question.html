@@ -22,7 +22,7 @@
         <div class="options">
             {% for option in question.options %}
             <label class="option-label">
-                <input type="radio" name="option" value="{{ loop.index0 }}" required>
+                <input type="checkbox" name="option" value="{{ loop.index0 }}">
                 <span>{{ option }}</span>
             </label>
             {% endfor %}

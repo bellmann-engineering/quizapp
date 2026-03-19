@@ -8,7 +8,7 @@
       "Er steuert alle Ein- und Ausgabegeräte",
       "Er übernimmt die Stromversorgung"
     ],
-    "correct_option": 1
+    "correct_options": [1]
   },
   {
     "id": 2,
@@ -19,6 +19,17 @@
       "Darstellen von Bildern",
       "Verwalten von Netzwerkverbindungen"
     ],
-    "correct_option": 1
+    "correct_options": [1]
+  },
+  {
+    "id": 3,
+    "question": "Wofür kann TCO stehen",
+    "options": [
+      "Total Cost of Ownership",
+      "ein Standard bei Mintoren zur Energieeffizenz",
+      "Total Control Orga",
+      "Team Compliance Option"
+    ],
+    "correct_options": [0,1]
   }
 ]

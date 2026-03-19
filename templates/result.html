@@ -26,11 +26,11 @@
                 <p class="wrong-question">{{ item.question }}</p>
                 <div class="answer-row">
                     <span class="badge badge-wrong">Deine Antwort</span>
-                    <span class="answer-text-wrong">{{ item.your_answer }}</span>
+                    <span class="answer-text-wrong">{{ item.your_answer | join(", ") }}</span>
                 </div>
                 <div class="answer-row">
                     <span class="badge badge-correct">Richtig</span>
-                    <span class="answer-text-correct">{{ item.correct_answer }}</span>
+                    <span class="answer-text-correct">{{ item.correct_answer | join(", ") }}</span>
                 </div>
             </div>
             {% endfor %}
